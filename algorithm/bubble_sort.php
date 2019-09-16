@@ -7,9 +7,9 @@ $data = [5, 2, 1, 8, 9, 3, 4, 7, 6,];
  */
 function bubble_sort_asc($data = [])
 {
-
-    for ($i = 0; $i < count($data) - 1; $i++) {
-        for ($j = 0; $j < count($data) - $i - 1; $j++) {
+    $len = count($data);
+    for ($i = 0; $i < $len - 1; $i++) {
+        for ($j = 0; $j < $len - $i - 1; $j++) {
             if ($data[$j] > $data[$j + 1]) {
                 list($small, $big) = [$data[$j + 1], $data[$j]];
                 $data[$j] = $small;
@@ -27,9 +27,9 @@ function bubble_sort_asc($data = [])
  */
 function bubble_sort_desc($data = [])
 {
-
-    for ($i = 0; $i < count($data) - 1; $i++) {
-        for ($j = 0; $j < count($data) - $i - 1; $j++) {
+    $len = count($data);
+    for ($i = 0; $i < $len - 1; $i++) {
+        for ($j = 0; $j < $len - $i - 1; $j++) {
             if ($data[$j] < $data[$j + 1]) {
                 list($small, $big) = [$data[$j], $data[$j + 1]];
                 $data[$j] = $big;
