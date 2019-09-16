@@ -10,6 +10,7 @@ function bubble_sort_asc($data = [])
     $len = count($data);
     for ($i = 0; $i < $len - 1; $i++) {
         for ($j = 0; $j < $len - $i - 1; $j++) {
+            //将最大值，放到末尾
             if ($data[$j] > $data[$j + 1]) {
                 list($small, $big) = [$data[$j + 1], $data[$j]];
                 $data[$j] = $small;
@@ -30,6 +31,7 @@ function bubble_sort_desc($data = [])
     $len = count($data);
     for ($i = 0; $i < $len - 1; $i++) {
         for ($j = 0; $j < $len - $i - 1; $j++) {
+            //将最小值，放到末尾
             if ($data[$j] < $data[$j + 1]) {
                 list($small, $big) = [$data[$j], $data[$j + 1]];
                 $data[$j] = $big;
