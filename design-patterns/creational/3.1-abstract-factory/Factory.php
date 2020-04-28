@@ -29,21 +29,22 @@ abstract class Factory
 
     /**
      * 开始运作
+     * @param $name
      * @return array
      */
-    public function startsOperation()
+    public function startsOperation($name)
     {
         $pipeline = [
-            static::class,
+            '<em>' . $name . ' 投资了 ' . static::class . '</em>',
         ];
         foreach ($this->purchaseMaterials() as $item) {
-            $pipeline[] = '采购：' . $item;
+            $pipeline[] = '采购: ' . $item;
         }
         foreach ($this->recruitmentWorkers() as $item) {
-            $pipeline[] = '招聘：' . $item;
+            $pipeline[] = '招聘: ' . $item;
         }
         foreach ($this->manufacture() as $item) {
-            $pipeline[] = '制造：' . $item;
+            $pipeline[] = '制造: ' . $item;
         }
         return $pipeline;
     }

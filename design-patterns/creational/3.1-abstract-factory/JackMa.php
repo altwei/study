@@ -36,7 +36,7 @@ class JackMa
     public function startsOperation()
     {
         return array_map(function (Factory $factory) {
-            return implode(PHP_EOL, $factory->startsOperation());
+            return implode(PHP_EOL, $factory->startsOperation(__CLASS__));
         }, $this->group);
     }
 }
