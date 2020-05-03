@@ -2,9 +2,9 @@
 
 namespace AbstractFactory;
 
-use AbstractFactory\BusinessPlans\TaoBao;
-use AbstractFactory\BusinessPlans\WeChat;
-use AbstractFactory\BusinessPlans\WestwardJourney;
+use AbstractFactory\Projects\TaoBao;
+use AbstractFactory\Projects\WeChat;
+use AbstractFactory\Projects\WestwardJourney;
 use AbstractFactory\Entrepreneurs\AllenZhang;
 use AbstractFactory\Entrepreneurs\JackMa;
 use AbstractFactory\Entrepreneurs\WilliamDing;
@@ -41,7 +41,7 @@ echo PHP_EOL . PHP_EOL;
 
 //丁磊的创业历程
 $entrepreneur = new WilliamDing();
-$entrepreneur->take(new WestwardJourney());
+$entrepreneur->develop(new WestwardJourney());
 echo $entrepreneur->course();
 //输出：
 //32岁的丁三石，拿着50万元人民币的启动资金，研发出《梦幻西游》。

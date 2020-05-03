@@ -3,11 +3,11 @@
 namespace AbstractFactory;
 
 /**
- * 商业计划书
- * Class BusinessPlan
+ * 项目
+ * Class Project
  * @package AbstractFactory
  */
-abstract class BusinessPlan
+abstract class Project
 {
     /**
      * 项目名称

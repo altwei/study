@@ -1,15 +1,15 @@
 <?php
 
-namespace AbstractFactory\BusinessPlans;
+namespace AbstractFactory\Projects;
 
-use AbstractFactory\BusinessPlan;
+use AbstractFactory\Project;
 
 /**
- * 商业计划书 - 淘宝
+ * 项目 - 淘宝
  * Class TaoBao
- * @package AbstractFactory\BusinessPlans
+ * @package AbstractFactory\Project
  */
-class TaoBao extends BusinessPlan
+class TaoBao extends Project
 {
     /**
      * 项目名称

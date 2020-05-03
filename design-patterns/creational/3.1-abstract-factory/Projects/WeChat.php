@@ -1,15 +1,15 @@
 <?php
 
-namespace AbstractFactory\BusinessPlans;
+namespace AbstractFactory\Projects;
 
-use AbstractFactory\BusinessPlan;
+use AbstractFactory\Project;
 
 /**
- * 商业计划书 - 微信
+ * 项目 - 微信
  * Class WeChat
- * @package AbstractFactory\BusinessPlans
+ * @package AbstractFactory\Project
  */
-class WeChat extends BusinessPlan
+class WeChat extends Project
 {
     /**
      * 项目名称

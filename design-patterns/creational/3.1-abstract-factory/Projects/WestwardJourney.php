@@ -1,15 +1,15 @@
 <?php
 
-namespace AbstractFactory\BusinessPlans;
+namespace AbstractFactory\Projects;
 
-use AbstractFactory\BusinessPlan;
+use AbstractFactory\Project;
 
 /**
- * 商业计划书 - 梦幻西游
+ * 项目 - 梦幻西游
  * Class WestwardJourney
- * @package AbstractFactory\BusinessPlans
+ * @package AbstractFactory\Project
  */
-class WestwardJourney extends BusinessPlan
+class WestwardJourney extends Project
 {
     /**
      * 项目名称
